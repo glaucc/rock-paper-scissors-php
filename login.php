@@ -7,7 +7,7 @@ if ( isset($_POST['cancel'] ) ) {
 }
 
 $salt = 'XyZzy12*_';
-$stored_hash = 'a8609e8d62c043243c4e201cbb342862';  // Pw is meow123
+$stored_hash = '1a52e17fa899cf40fb04cfc42e6352f1';  // Pw is meow123
 
 $failure = false;  // If we have no POST data
 
@@ -33,7 +33,7 @@ if ( isset($_POST['who']) && isset($_POST['pass']) ) {
 <html>
 <head>
 <?php require_once "bootstrap.php"; ?>
-<title>Chuck Severance's Login Page</title>
+<title>Yusif Ahmedov</title>
 </head>
 <body>
 <div class="container">
@@ -45,24 +45,6 @@ if ( $failure !== false ) {
     // Look closely at the use of single and double quotes
     echo('<p style="color: red;">'.htmlentities($failure)."</p>\n");
 }
-
-// if ($_SERVER["REQUEST_METHOD"] == "POST") {
-//     if (empty($_POST["who"])) {
-//         $nameErr = "Name is required";
-//     }
-//     else {
-//         $name = ($_POST["who"]);
-//     }
-// }
-
-// if ($_SERVER["REQUEST_METHOD" == "POST"]) {
-//     if (empty($_POST["pass"])) {
-//         $passErr = "Password is required";
-//     }
-//     else {
-//         $pass = ($_POST["pass"]);
-//     }
-// }
 ?>
 <form method="POST">
 <label for="nam">User Name</label>
@@ -75,8 +57,9 @@ if ( $failure !== false ) {
 <p>
 For a password hint, view source and find a password hint
 in the HTML comments.
-<!-- Hint: The password is the four character sound a cat
-makes (all lower case) followed by 123. -->
+<!-- Hint: The password is the three character name of the 
+programming language used in this class (all lower case) 
+followed by 123. -->
 </p>
 </div>
 </body>
